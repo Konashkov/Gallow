@@ -1,0 +1,40 @@
+<svg width="244" height="266" xmlns="http://www.w3.org/2000/svg">
+ <!-- Created with SVG-edit - https://github.com/SVG-Edit/svgedit-->
+
+ <g>
+  <title>background</title>
+  <rect x="-1" y="-1" width="246" height="268" id="canvas_background" fill="none"/>
+ </g>
+ <g class="layer">
+  <title>Layer 1</title>
+  <g id="svg_1">
+   <line fill="none" id="svg_28" stroke="#000000" stroke-linecap="null" stroke-linejoin="null" stroke-width="5" x1="122" x2="122" y1="10.999998" y2="58.000001"/>
+   <path fill="none" stroke="#000000" stroke-width="5" stroke-opacity="null" fill-opacity="null" opacity="0.5" d="m96.173934,62.84779" id="svg_7"/>
+   <path fill="none" stroke="#000000" stroke-width="5" stroke-opacity="null" fill-opacity="null" opacity="0.5" d="m121.717407,56.326052" id="svg_8"/>
+   <path fill="#ffffff" stroke="#000000" stroke-width="5" stroke-opacity="null" opacity="0.5" d="m87.478284,111.760822" id="svg_19"/>
+   <path fill="#ffffff" stroke="#000000" stroke-width="5" stroke-opacity="null" fill-opacity="null" opacity="0.5" d="m134.613629,106.422357" id="svg_31" transform="rotate(42.517669677734375 134.61363220214844,106.42234802246095) "/>
+   <g id="svg_35" stroke="null">
+    <ellipse fill="#ffffff" stroke-width="5" stroke-opacity="null" cx="121.989146" cy="70.016082" id="svg_13" rx="15.489126" ry="14.776982" stroke="#000000"/>
+    <ellipse fill="#000000" stroke-width="5" stroke-opacity="null" cx="116.969518" cy="67.886067" id="svg_17" rx="1.29076" ry="1.198134" stroke="#000000"/>
+    <ellipse fill="#000000" stroke-width="5" stroke-opacity="null" cx="127.869273" cy="67.619815" id="svg_18" rx="1.29076" ry="1.198134" stroke="#000000"/>
+   </g>
+   <line fill="none" stroke-width="5" stroke-opacity="null" fill-opacity="null" x1="122.260885" y1="82.956484" x2="122.260885" y2="149.289243" id="svg_36" stroke-linejoin="null" stroke-linecap="null" stroke="#000000"/>
+   <line fill="none" stroke-width="5" stroke-opacity="null" fill-opacity="null" x1="122.804367" y1="110.673869" x2="148.519244" y2="84.958992" id="svg_37" stroke-linejoin="null" stroke-linecap="null" stroke="#000000"/>
+   <line fill="none" stroke-width="5" stroke-opacity="null" fill-opacity="null" x1="95.630459" y1="119.912997" x2="121.345336" y2="94.198121" id="svg_39" stroke-linejoin="null" stroke-linecap="null" stroke="#000000"/>
+   <line fill="#ffffff" id="svg_22" stroke="#000000" stroke-linecap="null" stroke-linejoin="null" stroke-width="5" x1="44" x2="75" y1="56" y2="24"/>
+   <line fill="#ffffff" id="svg_25" stroke-linecap="null" stroke-linejoin="null" stroke-width="5" x1="44.086948" x2="98.369566" y1="78.367288" y2="22.586959" stroke="#000000"/>
+   <g id="svg_41">
+    <rect fill="#ffffff" height="235" id="svg_20" stroke="#000000" stroke-linecap="null" stroke-linejoin="null" stroke-width="5" width="20" x="24" y="12"/>
+    <rect fill="#f9f9f9" height="16" id="svg_9" stroke="#000000" stroke-linecap="null" stroke-linejoin="null" stroke-width="5" width="216" x="14" y="234"/>
+    <path d="m43.40001,248l6.49999,0l0,0c3.58985,0 6.49999,4.25329 6.49999,9.49999c0,5.24671 -2.91014,9.5 -6.49999,9.5l-6.49999,0l0,-18.99999z" fill="none" id="svg_30" stroke="#000000" stroke-linecap="null" stroke-linejoin="null" stroke-width="5" transform="rotate(90 49.899993896484325,257.50000000000006) "/>
+    <path d="m43.40001,248l6.49999,0l0,0c3.58985,0 6.49999,4.25329 6.49999,9.49999c0,5.24671 -2.91014,9.5 -6.49999,9.5l-6.49999,0l0,-18.99999z" fill="none" id="svg_4" stroke="#000000" stroke-linecap="null" stroke-linejoin="null" stroke-width="5" transform="rotate(90 49.899993896484325,257.50000000000006) "/>
+    <path d="m174.921723,248l6.49999,0l0,0c3.58985,0 6.49999,4.25329 6.49999,9.49999c0,5.24671 -2.91014,9.5 -6.49999,9.5l-6.49999,0l0,-18.99999z" fill="none" id="svg_6" stroke="#000000" stroke-linecap="null" stroke-linejoin="null" stroke-width="5" transform="rotate(90 181.42170715332028,257.50000000000006) "/>
+   </g>
+   <g id="svg_42">
+    <rect fill="#ffffff" height="19" id="svg_21" stroke="#000000" stroke-linecap="null" stroke-linejoin="null" stroke-width="5" width="152" x="4" y="4"/>
+    <line fill="none" id="svg_26" stroke="#000000" stroke-linecap="null" stroke-linejoin="null" stroke-width="5" x1="127" x2="110" y1="5" y2="24"/>
+    <line fill="none" id="svg_27" stroke="#000000" stroke-linecap="null" stroke-linejoin="null" stroke-width="5" x1="141" x2="124" y1="4" y2="23"/>
+   </g>
+  </g>
+ </g>
+</svg>

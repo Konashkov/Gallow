@@ -1,0 +1,87 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    transition: 0.5s;
+}
+.game{
+width: 80%;
+margin: auto;
+}
+.right-word{
+    display: block;
+    color: grey;
+    font-size: 15px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.wrap{
+    margin-bottom: 8px;
+}
+.gallow-img{
+    display: block;
+    margin: auto;
+}
+.word{
+    text-align: center;
+    align-items: center;
+    font-size: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 200px;
+    margin:50px auto;
+}
+form{
+    margin: auto;
+}
+.keyboard--btn{
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 20%;
+    border: 2px solid black;
+    margin-right: 10px;
+}
+button.keyboard--btn:disabled{
+    background-color: lightgray;
+}
+button.keyboard--btn:hover{
+    cursor: pointer;
+
+}
+.word--icon{
+    display: block;
+    width: 20px;
+    height: 50px;
+    border-bottom: 5px solid black;
+}
+.wrap{
+    display: flex;
+    justify-content: center;
+}
+.keys-fail{
+    background-color: darkred;
+    color: white;
+}
+button.keys-fail:disabled{
+    background-color: lightcoral;
+}
+.keys-right{
+    background-color: darkgreen;
+    color: white;
+}
+button.keys-right:disabled{
+    background-color: lightgreen;
+    color: white;
+}
+.restart--btn{
+    display: block;
+    background-color: yellow;
+    border: 1px solid black;
+    border-radius: 5px;
+    text-align: center;
+    margin: auto;
+    min-width: 100px;
+}

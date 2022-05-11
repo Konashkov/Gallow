@@ -1,0 +1,29 @@
+<svg width="244" height="266" xmlns="http://www.w3.org/2000/svg">
+ <!-- Created with SVG-edit - https://github.com/SVG-Edit/svgedit-->
+
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="268" width="246" y="-1" x="-1"/>
+ </g>
+ <g class="layer">
+  <title>Layer 1</title>
+  <line y2="56.10959" y1="9.109587" x2="119.218158" x1="119.218158" stroke-width="5" stroke-linejoin="null" stroke-linecap="null" stroke="#000000" id="svg_28" fill="none"/>
+  <path id="svg_7" d="m93.392092,60.957379" opacity="0.5" fill-opacity="null" stroke-opacity="null" stroke-width="5" stroke="#000000" fill="none"/>
+  <path id="svg_8" d="m118.935565,54.435641" opacity="0.5" fill-opacity="null" stroke-opacity="null" stroke-width="5" stroke="#000000" fill="none"/>
+  <path id="svg_19" d="m84.696442,109.870411" opacity="0.5" stroke-opacity="null" stroke-width="5" stroke="#000000" fill="#ffffff"/>
+  <path id="svg_31" d="m131.831787,104.531946" opacity="0.5" fill-opacity="null" stroke-opacity="null" stroke-width="5" stroke="#000000" fill="#ffffff"/>
+  <ellipse stroke="#000000" ry="14.776982" rx="15.489126" id="svg_13" cy="68.125671" cx="119.207304" stroke-opacity="null" stroke-width="5" fill="#ffffff"/>
+  <ellipse stroke="#000000" ry="1.198134" rx="1.29076" id="svg_17" cy="65.995656" cx="114.187676" stroke-opacity="null" stroke-width="5" fill="#000000"/>
+  <ellipse stroke="#000000" ry="1.198134" rx="1.29076" id="svg_18" cy="65.729404" cx="125.087431" stroke-opacity="null" stroke-width="5" fill="#000000"/>
+  <line stroke="#000000" stroke-linecap="null" stroke-linejoin="null" id="svg_36" y2="147.942309" x2="119.479043" y1="81.066073" x1="119.479043" fill-opacity="null" stroke-opacity="null" stroke-width="5" fill="none"/>
+  <line y2="22.109589" y1="54.109589" x2="72.218158" x1="41.218158" stroke-width="5" stroke-linejoin="null" stroke-linecap="null" stroke="#000000" id="svg_22" fill="#ffffff"/>
+  <line stroke="#000000" y2="20.696548" y1="76.476877" x2="95.587724" x1="41.305106" stroke-width="5" stroke-linejoin="null" stroke-linecap="null" id="svg_25" fill="#ffffff"/>
+  <rect y="10.109589" x="21.218158" width="20" stroke-width="5" stroke-linejoin="null" stroke-linecap="null" stroke="#000000" id="svg_20" height="235" fill="#ffffff"/>
+  <rect y="232.109589" x="11.218158" width="216" stroke-width="5" stroke-linejoin="null" stroke-linecap="null" stroke="#000000" id="svg_9" height="16" fill="#f9f9f9"/>
+  <path stroke-width="5" stroke-linejoin="null" stroke-linecap="null" stroke="#000000" id="svg_4" fill="none" d="m41.081131,245.183666l6.49999,0l0,0c3.58985,0 6.49999,4.25329 6.49999,9.49999c0,5.24671 -2.91014,9.5 -6.49999,9.5l-6.49999,0l0,-18.99999z" transform="rotate(90 47.58111572265623,254.68367004394534) "/>
+  <path stroke-width="5" stroke-linejoin="null" stroke-linecap="null" stroke="#000000" id="svg_6" fill="none" d="m172.139881,246.109589l6.49999,0l0,0c3.58985,0 6.49999,4.25329 6.49999,9.49999c0,5.24671 -2.91014,9.5 -6.49999,9.5l-6.49999,0l0,-18.99999z" transform="rotate(90 178.6398620605469,255.60958862304688) "/>
+  <rect y="2.109589" x="1.218158" width="152" stroke-width="5" stroke-linejoin="null" stroke-linecap="null" stroke="#000000" id="svg_21" height="19" fill="#ffffff"/>
+  <line y2="22.109589" y1="3.109589" x2="107.218158" x1="124.218158" stroke-width="5" stroke-linejoin="null" stroke-linecap="null" stroke="#000000" id="svg_26" fill="none"/>
+  <line y2="21.109589" y1="2.109589" x2="121.218158" x1="138.218158" stroke-width="5" stroke-linejoin="null" stroke-linecap="null" stroke="#000000" id="svg_27" fill="none"/>
+ </g>
+</svg>

@@ -1,0 +1,32 @@
+<svg width="244" height="266" xmlns="http://www.w3.org/2000/svg">
+ <!-- Created with SVG-edit - https://github.com/SVG-Edit/svgedit-->
+
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="268" width="246" y="-1" x="-1"/>
+ </g>
+ <g class="layer">
+  <title>Layer 1</title>
+  <g id="svg_1">
+   <line y2="57.500001" y1="10.499998" x2="121.5" x1="121.5" stroke-width="5" stroke-linejoin="null" stroke-linecap="null" stroke-dasharray="null" stroke="#000000" id="svg_28" fill="none"/>
+   <rect y="11.5" x="23.5" width="20" stroke-width="5" stroke-linejoin="null" stroke-linecap="null" stroke="#000000" id="svg_20" height="235" fill="none"/>
+   <rect y="3.5" x="3.5" width="152" stroke-width="5" stroke-linejoin="null" stroke-linecap="null" stroke="#000000" id="svg_21" height="19" fill="#ffffff"/>
+   <line y2="23.5" y1="55.5" x2="74.5" x1="43.5" stroke-width="5" stroke-linejoin="null" stroke-linecap="null" stroke-dasharray="null" stroke="#000000" id="svg_22" fill="none"/>
+   <line stroke="#000000" y2="22.086959" y1="79" x2="97.869566" x1="42.5" stroke-width="5" stroke-linejoin="null" stroke-linecap="null" id="svg_25" fill="none"/>
+   <line y2="23.5" y1="4.5" x2="109.5" x1="126.5" stroke-width="5" stroke-linejoin="null" stroke-linecap="null" stroke-dasharray="null" stroke="#000000" id="svg_26" fill="none"/>
+   <line y2="22.5" y1="3.5" x2="123.5" x1="140.5" stroke-width="5" stroke-linejoin="null" stroke-linecap="null" stroke-dasharray="null" stroke="#000000" id="svg_27" fill="none"/>
+   <rect y="233.5" x="13.5" width="216" stroke-width="5" stroke-linejoin="null" stroke-linecap="null" stroke="#000000" id="svg_9" height="16" fill="#f9f9f9"/>
+   <path transform="rotate(90 48.399993896484325,256.00000000000006) " stroke-width="5" stroke-linejoin="null" stroke-linecap="null" id="svg_4" fill="none" d="m41.90001,246.5l6.49999,0l0,0c3.58985,0 6.49999,4.25329 6.49999,9.49999c0,5.24671 -2.91014,9.5 -6.49999,9.5l-6.49999,0l0,-18.99999z" stroke="#000000"/>
+   <path transform="rotate(90 180.92170715332028,257.00000000000006) " stroke-width="5" stroke-linejoin="null" stroke-linecap="null" stroke="#000000" id="svg_6" fill="none" d="m174.42172,247.5l6.49999,0l0,0c3.58985,0 6.49999,4.25329 6.49999,9.49999c0,5.24671 -2.91014,9.5 -6.49999,9.5l-6.49999,0l0,-18.99999z"/>
+   <path id="svg_7" d="m95.67393,62.34779" opacity="0.5" fill-opacity="null" stroke-opacity="null" stroke-width="5" stroke="#000000" fill="none"/>
+   <path id="svg_8" d="m121.21741,55.82605" opacity="0.5" fill-opacity="null" stroke-opacity="null" stroke-width="5" stroke="#000000" fill="none"/>
+   <path id="svg_19" d="m86.97828,111.26082" opacity="0.5" stroke-opacity="null" stroke-width="5" stroke="#000000" fill="#ffffff"/>
+   <path transform="rotate(42.517669677734375 134.1136322021485,105.92234802246092) " id="svg_31" d="m134.11363,105.92236" opacity="0.5" fill-opacity="null" stroke-opacity="null" stroke-width="5" stroke="#000000" fill="#ffffff"/>
+   <g stroke="null" id="svg_35">
+    <ellipse stroke="#000000" ry="22.554344" rx="23.6413" id="svg_13" cy="77.293441" cx="122.032625" stroke-opacity="null" stroke-width="5" fill="#ffffff"/>
+    <ellipse stroke="#000000" ry="1.828731" rx="1.970108" id="svg_17" cy="74.042364" cx="114.371087" stroke-opacity="null" stroke-width="5" fill="#000000"/>
+    <ellipse stroke="#000000" ry="1.828731" rx="1.970108" id="svg_18" cy="73.63598" cx="131.007557" stroke-opacity="null" stroke-width="5" fill="#000000"/>
+   </g>
+  </g>
+ </g>
+</svg>
