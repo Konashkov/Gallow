@@ -25,3 +25,6 @@ const getNewWord = () => {
 }
 const app = runApp();
 app.init( getNewWord())
+if(localStorage.getItem('data-state')!==null){
+    app.state.loadFromLocaleStorage()
+}

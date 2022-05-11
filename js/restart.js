@@ -1,4 +1,5 @@
 function restart(){
+    localStorage.clear()
     document.querySelectorAll('.keyboard--btn').forEach((el) => {
         el.remove()
     })

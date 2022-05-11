@@ -1,7 +1,7 @@
 const runApp = function () {
     this.state = null;
 
-    this.render = () => {
+    this.render = (flag) => {
         const LETTER_CELL = document.querySelectorAll('.word-el')
         LETTER_CELL.forEach((el) => {
             el.remove()
@@ -19,23 +19,42 @@ const runApp = function () {
         })
         if (!(document.querySelector('.word').contains(document.querySelector('.word--icon')))) {
             document.removeEventListener('click', f)
-            this.state.setStatus(STATUS_WIN)
+            setStatus(STATUS_WIN)
         }
 
+        if (flag) {
 
-        //WIN / LOSE / CONTINUE
-        switch (this.state.status) {
+            //WIN / LOSE / CONTINUE
+            switch (this.state.status) {
 
-            case STATUS_CONTINUE:
-                break;
-            case STATUS_FAIL:
-                console.log('LOSE')
-                fail()
-                break;
-            case STATUS_WIN:
-                console.log('WIN')
-                win()
-                break;
+                case STATUS_CONTINUE:
+                    saveToLocaleStorage()
+                    break;
+                case STATUS_FAIL:
+                    console.log('LOSE')
+                    document.querySelectorAll('.keyboard--btn').forEach((el) => {
+                        if (!el.classList.contains('key-right'))
+                            el.classList.add('keys-fail')
+                    })
+                    let rightWord = document.createElement('p')
+                    rightWord.innerText = 'Right word was: ' + app.state.word;
+                    rightWord.classList.add('right-word')
+                    document.querySelector('.word').after(rightWord)
+                    localStorage.clear();
+                    break;
+                case STATUS_WIN:
+                    console.log('WIN')
+                    document.querySelectorAll('.keyboard--btn').forEach((el) => {
+                        if (!el.classList.contains('keys-fail'))
+                            el.classList.add('keys-right')
+                    })
+                    const win = document.createElement('p')
+                    win.classList.add('right-word')
+                    win.innerText = 'You did it!'
+                    document.querySelector('.word').after(win)
+                    localStorage.clear();
+                    break;
+            }
         }
 
     }
@@ -53,21 +72,21 @@ const runApp = function () {
         const nextField = this.state.field.map((v, index) => {
             return indexes.includes(index) ? 1 : v
         })
-        this.state.setField(nextField)
+        setField(nextField)
         if (!isCorrect) {
-            this.state.incriseMistakes()
-            document.querySelector('.'+letter).classList.add('keys-fail')
+            incriseMistakes()
+            document.querySelector('.' + letter).classList.add('keys-fail')
         }
         else{
             document.querySelector('.'+letter).classList.add('keys-right')
         }
         //End isGuess
         //Rendering
-        this.render()
+        this.render(true)
     }
 
     this.init = (newWord) => {
-        this.state = createState();
+        this.state = new State();
 
 
         this.state.setWord(newWord)
@@ -77,15 +96,15 @@ const runApp = function () {
             const row = chars.map((c) => {
                 const el = document.createElement('BUTTON')
                 el.classList.add('keyboard--btn')
-                el.classList.add(c)
                 el.setAttribute('data-action', 'turn')
                 el.innerText = c
+                el.classList.add(c)
                 return el
             });
             const selector = '[data-keyboard-row=row-' + (index + 1) + ']';
             document.querySelector(selector).append(...row)
         })
-        this.render();
+        this.render(false);
     }
 
     return this;

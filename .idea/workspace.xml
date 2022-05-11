@@ -4,11 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c9996411-44d6-41f6-a3e8-cd6585242a38" name="Changes" comment="Works without locale storage">
-      <change afterPath="$PROJECT_DIR$/.idea/Gallow.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="c9996411-44d6-41f6-a3e8-cd6585242a38" name="Changes" comment="Works without locale storage&#10;Initial commit">
+      <change afterPath="$PROJECT_DIR$/js/locale-storage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/fail.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/fail.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/restart.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/restart.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/state.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/state.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,7 +37,7 @@
     </option>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="END_GAME_DESIGN" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -41,18 +46,22 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="28iQEKeMxTlogYIoZdoKlukBymE" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
     "last_opened_file_path": "C:/Users/Алексей/OneDrive/Other/Gallow",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -86,7 +95,10 @@
       <workItem from="1652252772925" duration="57000" />
       <workItem from="1652259592511" duration="325000" />
       <workItem from="1652259922681" duration="1562000" />
-      <workItem from="1652263270771" duration="697000" />
+      <workItem from="1652263270771" duration="1441000" />
+      <workItem from="1652264751817" duration="199000" />
+      <workItem from="1652264984673" duration="6851000" />
+      <workItem from="1652284596665" duration="4682000" />
     </task>
     <task id="LOCAL-00001" summary="Works without styling">
       <created>1652113987986</created>
@@ -116,7 +128,21 @@
       <option name="project" value="LOCAL" />
       <updated>1652263442987</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Works without locale storage">
+      <created>1652263989800</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1652263989800</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Works without locale storage&#10;Initial commit">
+      <created>1652264121317</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1652264121317</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -128,12 +154,13 @@
         <entry key="MAIN">
           <value>
             <State>
+              <option name="SHOW_ROOT_NAMES" value="true" />
               <option name="FILTERS">
                 <map>
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="master" />
+                        <option value="Refactoring(11_05)" />
                       </list>
                     </value>
                   </entry>
@@ -161,12 +188,14 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <ignored-roots>
-      <path value="$PROJECT_DIR$" />
+      <path value="$PROJECT_DIR$/Gallow" />
     </ignored-roots>
     <MESSAGE value="Works without styling" />
     <MESSAGE value="Works without locale storage" />
-    <option name="LAST_COMMIT_MESSAGE" value="Works without locale storage" />
+    <MESSAGE value="Works without locale storage&#10;Initial commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Works without locale storage&#10;Initial commit" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
