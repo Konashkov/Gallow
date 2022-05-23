@@ -59,7 +59,8 @@ class State {
             this.setStatus(STATUS_FAIL)
             localStorage.clear();
             this.loses++
-            localStorage.setItem('data-wins', JSON.stringify(this.loses))
+            localStorage.setItem('data-fails', JSON.stringify(this.loses))
+            localStorage.setItem('data-wins', JSON.stringify(this.wins))
             document.removeEventListener('click', f)
         }
     }
@@ -70,6 +71,7 @@ class State {
             this.setStatus(STATUS_WIN)
             this.wins++
             localStorage.setItem('data-wins', JSON.stringify(this.wins))
+            localStorage.setItem('data-fails', JSON.stringify(this.loses))
             document.removeEventListener('click', f)
         }
     }
