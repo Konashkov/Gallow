@@ -1,10 +1,37 @@
 class State {
+
+    status = STATUS_CONTINUE;
+    word = '';
+    field = [];
+    mistakes = 0;
+    guessedLetters = 0;
+    wins = 0;
+    loses = 0;
+    keys =
+        [
+            [{key: 'Q', status: 0}, {key: 'W', status: 0}, {key: 'E', status: 0}, {
+                key: 'R',
+                status: 0
+            }, {key: 'T', status: 0}, {key: 'Y', status: 0}, {key: 'U', status: 0}, {
+                key: 'I',
+                status: 0
+            }, {key: 'O', status: 0}, {key: 'P', status: 0},],
+            [{key: 'A', status: 0}, {key: 'S', status: 0}, {key: 'D', status: 0}, {
+                key: 'F',
+                status: 0
+            }, {key: 'G', status: 0}, {key: 'H', status: 0}, {key: 'J', status: 0}, {
+                key: 'K',
+                status: 0
+            }, {key: 'L', status: 0},],
+            [{key: 'Z', status: 0}, {key: 'X', status: 0}, {key: 'C', status: 0}, {
+                key: 'V',
+                status: 0
+            }, {key: 'B', status: 0}, {key: 'N', status: 0}, {key: 'M', status: 0}]
+        ]
     constructor() {
-        this.status = STATUS_CONTINUE;
-        this.word = '';
-        this.field = [];
-        this.keys = [{key: 'K', status: 0}, {}];
+            this.loadFromLocaleStorage()
     }
+
 
     setStatus(status) {
         this.status = status
@@ -17,55 +44,62 @@ class State {
     setField(field) {
         this.field = field
     }
-    
-    incriseMistakes() {
-        const img = document.querySelector('.gallow-img')
-        let prevIndex = STAGE_OF_IMG.indexOf(img.getAttribute('src'))
-        if (prevIndex + 1 < STAGE_OF_IMG.length)
-            img.setAttribute('src', STAGE_OF_IMG[prevIndex + 1])
-        if ((prevIndex + 1) === (STAGE_OF_IMG.length - 1)) {
-            app.state.status = STATUS_FAIL
+
+    setKeyStatus(char, status) {
+        const buff = app.state.keys[0].concat(app.state.keys[1], app.state.keys[2]);
+        const result = buff.find((obj) => {
+            return obj.key === char
+        })
+        result.status = status
+    }
+
+    increaseMistakes() {
+        this.mistakes++
+        if (this.mistakes >= STAGE_OF_IMG.length - 1) {
+            this.setStatus(STATUS_FAIL)
+            localStorage.clear();
+            this.loses++
+            localStorage.setItem('data-wins', JSON.stringify(this.loses))
+            document.removeEventListener('click', f)
+        }
+    }
+
+    increaseGuessedLetters() {
+        this.guessedLetters++
+        if (this.guessedLetters >= this.word.length) {
+            this.setStatus(STATUS_WIN)
+            this.wins++
+            localStorage.setItem('data-wins', JSON.stringify(this.wins))
             document.removeEventListener('click', f)
         }
     }
 
     saveToLocaleStorage() {
-        // IS LOCALSTORAGE EXISTED?
-        const KEYS = document.querySelectorAll('.keyboard--btn')
-        let btns = []
-        KEYS.forEach((el) => {
-            btns.push([
-                el.getAttribute('disabled'),
-                el.getAttribute('class')]
-            )
-        })
-        localStorage.setItem('data-btns', JSON.stringify(btns))
-        localStorage.setItem('data-img', JSON.stringify(document.querySelector('.gallow-img').getAttribute('src')))
+        const s = {
+            word: this.word,
+            status: this.status,
+            guessedLetters: this.guessedLetters,
+            mistakes: this.mistakes,
+            keys: this.keys,
+            field: this.field
+        }
+
+        localStorage.setItem('data-state', JSON.stringify(s))
     }
-    
+
     loadFromLocaleStorage() {
-        document.querySelector('.gallow-img').setAttribute('src', JSON.parse(localStorage.getItem('data-img')))
-        const btns_status = JSON.parse(localStorage.getItem('data-btns'))
-        document.querySelector('.keyboard--btn').remove()
-        const KEYS = document.querySelectorAll('.keyboard--btn')
-    
-        app.state = JSON.parse(localStorage.getItem('data-state'))
-        KEYS.forEach((el, index) => {
-            if (btns_status[index][0] === 'true') {
-                const indexes = []
-                this.state.word.split('').forEach((char, index) => {
-                    if (char === el.innerText) {
-                        indexes.push(index)
-                    }
-                })
-                const nextField = this.state.field.map((v, index) => {
-                    return indexes.includes(index) ? 1 : v
-                })
-               setField(nextField)
-                app.render(false)
-                el.setAttribute('disabled', 'true')
-            }
-            el.setAttribute('class', btns_status[index][1])
-        })
+        if (localStorage.getItem('data-state') !== null) {
+
+            const s = JSON.parse(localStorage.getItem('data-state'))
+            Object.keys(s).forEach((k) => {
+                if (this.hasOwnProperty(k)) {
+                    this[k] = s[k]
+                }
+            })
+        }
+        if(localStorage.getItem('data-wins' )!= null){
+            this.wins = JSON.parse(localStorage.getItem('data-wins'))
+            this.loses = JSON.parse(localStorage.getItem('data-fails'))
+        }
     }
 }

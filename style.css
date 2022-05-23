@@ -5,9 +5,18 @@
     font-family: 'Open Sans', sans-serif;
     transition: 0.5s;
 }
+.wins-loses{
+    width: 50%;
+    margin: 0 auto 20px;
+    text-align: center;
+    align-items: center;
+    font-size: 20px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+}
 .game{
-width: 80%;
-margin: auto;
+    padding-top: 20px;
 }
 .right-word{
     display: block;
@@ -16,22 +25,20 @@ margin: auto;
     text-align: center;
     margin-bottom: 50px;
 }
-.wrap{
-    margin-bottom: 8px;
-}
 .gallow-img{
     display: block;
     margin: auto;
 }
-.word{
+.word {
     text-align: center;
     align-items: center;
     font-size: 50px;
     height: 50px;
     display: flex;
     justify-content: space-between;
-    padding: 0 200px;
-    margin:50px auto;
+    /*padding: 0 200px;*/
+    width: 50%;
+    margin: 50px auto;
 }
 form{
     margin: auto;
@@ -58,8 +65,11 @@ button.keyboard--btn:hover{
     border-bottom: 5px solid black;
 }
 .wrap{
+    width: 50%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    margin: auto auto 8px;
+
 }
 .keys-fail{
     background-color: darkred;
@@ -76,6 +86,13 @@ button.keys-right:disabled{
     background-color: lightgreen;
     color: white;
 }
+.btns{
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+    margin: 20px auto ;
+}
+.reset-score--btn,
 .restart--btn{
     display: block;
     background-color: yellow;
@@ -84,4 +101,11 @@ button.keys-right:disabled{
     text-align: center;
     margin: auto;
     min-width: 100px;
+}
+.wrap-1{
+    padding:0 40px ;
+}.wrap-2{
+    padding:0 80px ;
+}.wrap-3{
+    padding:0 120px ;
 }

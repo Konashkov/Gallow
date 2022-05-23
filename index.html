@@ -10,28 +10,31 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
     <script src="js/vocabulary.js" defer></script>
     <script src="js/state.js" defer></script>
-    <script src="js/locale-storage.js" defer></script>
     <script src="js/app.js" defer></script>
     <script src="js/script.js" defer></script>
-    <script src="js/fail.js" defer></script>
-    <script src="js/win.js" defer></script>
     <script src="js/restart.js" defer></script>
 
 </head>
 
 <body>
-    <div class="game">
-        <img src="./img/Gallow-0.svg" alt="Gallow" class="gallow-img">
-        <div class="word">
-        </div>
-        <div id="keyboard">
-            <button class="keyboard--btn" style="display: none;"></button>
-            <div data-keyboard-row="row-1" class="wrap"></div>
-            <div data-keyboard-row="row-2" class="wrap"></div>
-            <div data-keyboard-row="row-3" class="wrap"></div>
-        </div>
+<div class="game">
+    <div class="wins-loses">
+        <p class="wins">WINS:<span class="number-wins">0</span></p>
+        <p class="loses">LOSES:<span class="number-loses">0</span></p>
     </div>
-    <button class="restart--btn">RESTART</button>
+    <div class="btns">
+        <button class="restart--btn">New Game</button>
+        <button class="reset-score--btn">Reset Score</button>
+    </div>
+    <img src="./img/Gallow-0.svg" alt="Gallow" class="gallow-img">
+    <div class="word">
+    </div>
+    <div id="keyboard">
+        <div data-keyboard-row="row-1" class="wrap wrap-1"></div>
+        <div data-keyboard-row="row-2" class="wrap wrap-2"></div>
+        <div data-keyboard-row="row-3" class="wrap wrap-3"></div>
+    </div>
+</div>
 </body>
 
 </html>
