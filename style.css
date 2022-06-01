@@ -4,6 +4,7 @@
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
     transition: 0.5s;
+    user-select: none;
 }
 .wins-loses{
     width: 50%;

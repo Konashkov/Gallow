@@ -10,8 +10,16 @@ const STAGE_OF_IMG = ['./img/Gallow-0.svg', './img/Gallow-1.svg', './img/Gallow-
 
 const f = (e) => {
     const el = e.target;
-    if (el.hasAttribute('data-action') && el.getAttribute('data-action') === 'turn') {
+    const action = el.hasAttribute('data-action') ? el.getAttribute('data-action') : ''
+
+    if ('turn' === action) {
         app.turn(el.innerText)
+    }
+    if ('resetGame' === action) {
+        app.resetGame()
+    }
+    if ('resetScore' === action) {
+        app.resetAll()
     }
 }
 document.addEventListener('click', f)

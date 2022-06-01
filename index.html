@@ -5,26 +5,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gallow</title>
+    <title>Gallow Game</title>
     <link rel="stylesheet" href="./style.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
     <script src="js/vocabulary.js" defer></script>
     <script src="js/state.js" defer></script>
     <script src="js/app.js" defer></script>
     <script src="js/script.js" defer></script>
-    <script src="js/restart.js" defer></script>
+    <link rel="icon" href="/img/video-game.png">
 
 </head>
 
 <body>
 <div class="game">
     <div class="wins-loses">
-        <p class="wins">WINS:<span class="number-wins">0</span></p>
-        <p class="loses">LOSES:<span class="number-loses">0</span></p>
+        <p class="wins">WINS:0</p>
+        <p class="loses">LOSES:0</p>
     </div>
     <div class="btns">
-        <button class="restart--btn">New Game</button>
-        <button class="reset-score--btn">Reset Score</button>
+        <button data-action="resetGame" class="restart--btn">New Game</button>
+        <button data-action="resetScore" class="reset-score--btn">Reset Score</button>
     </div>
     <img src="./img/Gallow-0.svg" alt="Gallow" class="gallow-img">
     <div class="word">
